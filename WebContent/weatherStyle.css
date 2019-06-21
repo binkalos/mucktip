@@ -1,0 +1,356 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+
+@import
+	url('https://fonts.googleapis.com/css?family=Sunflower:300&subset=korean')
+	;
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*전체영역*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+body {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+body, button {
+	color: #26282B;
+	font-family: "Helvetica", "Arial", "Apple SD Gothic Neo", "Nanum Gothic",
+		"Malgun Gothic", "DotumChe", "Dotum", sans-serif;
+	line-height: 1.3;
+}
+
+li {
+	list-style: none;
+}
+
+.main-page {
+	height: 100%;
+}
+/*업로드 아이콘*/
+.upload {
+	position: fixed;
+	right: 100px;
+	bottom: 0;
+	z-index: 999999;
+}
+
+.up {
+	position: fixed;
+	right: 10px;
+	bottom: 0;
+	z-index: 999999;
+}
+/*메인 메뉴 스타일*/
+.top-tip-fid {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1040px;
+	width: 100%;
+}
+
+.top-tip-in {
+	display: table; /*display 속성으로 표처럼 보이게 만듬*/
+}
+
+.hot-tip {
+	float: left;
+	margin-top: 10px;
+	width: 600px;
+	height: 400px;
+	border: solid 2px #FFBB00;
+	/*hot-tip radius 둥글게*/
+}
+
+.hottip-inner-wrapper {
+	/*img 가운데 보이게*/
+	position: relative;
+	width: 600px;
+	height: 400px;
+}
+
+/*hot-tip-information part*/
+.collection-information {
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	bottom: 0;
+	text-align: center;
+}
+
+.collection-title-border {
+	display: inline-block;
+	zoom: 1;
+	text-align: center;
+	/*이거 왜 가운데 정렬안됨....??*/
+	border-top: solid white 5px;
+	border-bottom: solid white 5px;
+}
+
+.collection-title-wrapper .collection-title {
+	color: #FFF;
+	max-height: 75px;
+	overflow: hidden;
+	font-size: 31px;
+	line-height: 1.2;
+}
+
+p {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+/*collection-description*/
+.collection-description-wrapper {
+	font-size: 18px;
+	color: #FFF;
+	margin-top: 14px;
+	margin-bottom: 26px;
+	height: 32px;
+	overflow: hidden;
+	text-align: center;
+}
+
+/*두번째 hot-tip스타일*/
+/*hot-tip옆으로 hot-tip2옮기기*/
+.hot-tip-second {
+	/*위치 오른쪽으로 이동*/
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+	width: 400px;
+	height: 400px;
+	border: solid 2px #FFBB00;
+	/*hot-tip radius 둥글게*/
+}
+
+.hot2 {
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.hottip-inner-wrapper2 {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.collection-information2 {
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	text-align: center;
+}
+
+.collection-title2 {
+	color: white;
+	font-size: 25px;
+}
+
+.collection-title-border2 {
+	display: inline-block;
+	zoom: 1;
+	text-align: center;
+	border-top: solid white 5px;
+	border-bottom: solid white 5px;
+}
+
+.collection-description-wrapper2 {
+	color: white;
+	font-size: 18px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.top-bar {
+	margin-top: 20px;
+	border-top: 1px solid #FFBB00;
+}
+
+.top-label {
+	float: left;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: #26282B;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/*게시글*/
+.muktip-feed {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1180px;
+}
+
+.muktip-contents {
+	position: relative;
+	margin-top: 50px;
+	max-width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*돋보기 부분 이미지*/
+.ic_search {
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	background-image: url(img/searchIcon.png);
+	background-size: 22px 22px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	zoom: 1;
+}
+/*레이어 팝업 오픈 버튼*/
+.open-fullview {
+	border: 0;
+}
+/*게시글 이미지 크기*/
+.showimg {
+	width: 218px;
+	height: 218px;
+	overflow: hidden;
+}
+
+.mucktip-card {
+	width: 220px;
+	max-height: 325px;
+	margin-bottom: 10px;
+	border: 1px solid #FFBB00;
+	border-radius: 6px;
+	float: left;
+	margin-right: 8px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.mucktip-information {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 12px;
+	font-size: 12px;
+}
+
+.mucktip-information * {
+	margin: 0;
+}
+
+.writer-profile {
+	float: left;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 10px;
+}
+
+.user-information-card {
+	overflow: hidden;
+}
+
+.top-information {
+	display: table;
+	width: 100%;
+}
+
+.writer {
+	float: left;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.write-date {
+	color: #9EA4AA;
+	float: right;
+}
+
+.bottom-card {
+	overflow: hidden;
+	color: #9EA4AA;
+	margin-top: 5px;
+}
+
+.content {
+	margin-top: 3px;
+}
+/*행간*/
+.line-space {
+	width: 100%;
+	height: 5px;
+	float: left;
+}
+/*검색 페이지*/
+.top-bar-search {
+	margin-top: 20px;
+}
+
+.main-search-page {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.search-result {
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 400px;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+#content {
+	height: 500px;
+}
+/*summer-wrapper*/
+.weather-wrapper {
+	
+	width: 1000px;
+	height: 500px;
+}
+
+.weather-img {
+	margin: 0;
+	width: 500px;
+	height: 500px;
+	float: left;
+}
+
+.summer {
+	width: 500px;
+	height: 500px;
+}
+
+.summerinfo {
+	width: 500px;
+	height: 500px;
+}
+
+.weather-info {
+	width: 450px;
+	height: 450px;
+	float: left;
+}

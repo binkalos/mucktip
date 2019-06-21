@@ -1,0 +1,291 @@
+li {
+	list-style: none;
+}
+
+/*nav영역*/
+#top-menu-all {
+	top:0;
+	left: 0;
+	right: 0;
+	background-color: white;
+}
+#top-menu-all * {
+	box-sizing: border-box;
+}
+#main-menu {
+	height: 90px;
+}
+
+/*top영역*/
+.contents-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1180px;
+	width: 100%;
+	height: 100%;
+}
+
+/*top-left 영역*/
+.left-contents-wrapper {
+	display: inline-block;
+	float: left;
+}
+/*로고*/
+.muktip-logo {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 12px;
+	margin-right: 12px;
+	margin-bottom: 10px;
+	width: 80px;
+	height: 80px;
+	background-repeat: no-reapeat;
+	background-size: cover;
+	background-position: 50%;
+	background-image: url(img/imoticon.png);
+}
+/*최신 먹팁*/
+.new-tip {
+	display: inline-block;
+	margin-bottom: -1px;
+	padding-left: 12px;
+	padding-right: 12px;
+	border-bottom: solid 3px #FFBB00;
+	color: #26282B;
+	font-size: 23px;
+	font-weight: bold;
+	line-height: 67px;
+	text-decoration: none;
+}
+/*추천*/
+.good {
+	display: inline-block;
+	margin-bottom: -1px;
+	padidng-left: 12px;
+	color: #000000;
+	font-size: 23px;
+	font-weight: bold;
+	line-height: 67px;
+	text-decoration: none;
+}
+.new-tip:hover {
+	color: #FFBB00;
+}
+.good:hover {
+	color: #FFBB00;
+}
+
+/*top-right 영역*/
+.right-contents-wrapper {
+	float: right;
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 10px;
+}
+/*[로그인/가입]*/
+.login-join {
+	display: block;
+	color: #EDA900;
+	padding-left: 12px;
+	padding-right: 12px;
+	height: 40px;
+	border: 2px solid #EDA900;
+	border-radius: 6px;
+	text-align: center;
+	line-height: 40px;
+	font-weight: bold;
+}
+.login-join a {
+	text-decoration: none;
+	color: #EDA900;
+}
+/*유저메뉴 영역*/
+.user-menu {
+	margin-left: 14px;
+	margin-right: 10px;
+	margin-top: 5px;
+	width: 100%;
+	height: 100%;
+}
+/*드롭다운 메뉴*/
+.dropdown {
+	position: relative;
+}
+.dropdown ul {
+	display: none; /*평상시에는 드롭다운 메뉴가 안보이게 하기*/
+}
+/*.dropdown:hover ul { /*아이콘에 hover할 시 드롭다운 메뉴의 스타일
+	display: block;
+}*/
+.dropdown ul li a:link {
+	color: black;
+	text-decoration: none;
+	font-size: 15px;
+}
+.dropdown .menu-link {
+	display: block;
+	padding-left: 22px;
+	padding-right: 16px;
+	font-size: 0;
+}
+/*프로필*/
+.profile-img-btn {
+	position: relative;
+	display: block;
+	width: 60px;
+	height: 65px;
+	background-color: transparent;
+	border: 0;
+	border-radius: 50%;
+	cursor: pointer;
+	outline: none;
+	overflow: hidden;
+}
+.profile-img-btn:hover li {
+	display: block;
+	background-color: red;
+}
+.profile-image {
+	width: 100%;
+	height: 100%;
+}
+/*메뉴 리스트*/
+.user-menu-list {
+	position: absolute;
+	top: 100%;
+	left: -100%;
+	text-align: left;
+	margin-top: 2px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	width: 220px;
+	background-color: white;
+	border-color: #E8EBED;
+	border-radius: 6px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+	z-index: 999;
+}
+/*메뉴 링크*/
+.menu-link {
+	display: block;
+	padding-left: 30px;
+	padding-right: 22px;
+}
+/*닉네임*/
+.menu-user-name {
+	font-weight: bold;
+}
+/*아이콘*/
+.menu-link img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/*검색 영역*/
+.search-wrapper {
+	display: block;
+	overflow: hidden;
+}
+.search-form {
+	display: block;
+	margin-top: 10px;
+	margin-left: 80px;
+	margin-right: 80px;
+	font-size: 0;
+	outline: none;
+	transform: translateZ(0);
+}
+.input-wrapper {
+	overflow: hidden;
+	display: block;
+	width: 500px;
+	height: 40px;
+}
+.search-keyword {
+	display: block;
+	padding-left: 12px;
+	padding-right: 12px;
+	width: 100%;
+	height: 100%;
+	border-color: #EDA900;
+	border-style: solid;
+	border-radius: 6px 0 0 6px;
+	border-width: 2px 0 2px 2px;
+	font-size: 14px;
+	outline: none;
+}
+.search-button {
+	display: block;
+	width: 80px;
+	height: 40px;
+	background-color: #EDA900;
+	border: 0;
+	border-radius: 0 6px 6px 0;
+	outline: none;
+	transition: background-color .3s ease;
+	float: right;
+	padding-top: 3px;
+}
+
+.ic_search{
+	display: inline-block;
+	background-image: url(img/imgsearchIcon.png);
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	zoom:1; width: 22px; height: 22px;
+	z-index: 999;
+}
+
+/*sub-menu 영역*/
+.show {
+	padding: 10px;
+	width: 100%;
+	display: block;
+	height: 50px;
+	border-bottom: solid 1px #FFBB00;
+}
+
+#sub-menu.selected {
+	position: absolute;
+	top: 0;
+	left: 12px;
+	width: 100%;
+	line-height: 49px;
+	content: attr(data-text);
+	color: #26282B;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.sub-contents-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1040px;
+	list-style: none;
+}
+
+.sub-menu {
+	display: inline-block;
+	margin-left: 12px;
+}
+
+/*목록 스타일*/
+.sub-contents-wrapper a {
+	text-decoration: none;
+	color: #26282B;
+}
+
+.selected {
+	font-weight: bold;
+}
+
+.sub-menu:hover {
+	font-weight: bold;
+}

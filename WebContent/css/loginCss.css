@@ -1,0 +1,8 @@
+/*상단 아이콘*/
+.topIcon {
+	width: 200px;
+	height: 200px;
+	/*이미지 가운데 정렬*/
+	display: block;
+	margin: 0px auto;
+}
